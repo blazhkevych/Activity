@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Activity</string>
-    <string name="button_first_activity">Start first activity</string>
-    <string name="button_second_activity">Start second activity</string>
+    <string name="app_name">Активность</string>
+    <string name="button_first_activity">Начать первую активность</string>
+    <string name="button_second_activity">Начать вторую активность</string>
+    // Landscape
+    <string name="button_first_activity_land">Начать первую активность</string>
+    <string name="button_second_activity_land">Начать вторую активность</string>
 </resources>
