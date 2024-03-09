@@ -1,13 +1,10 @@
 package com.example.activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -25,9 +22,11 @@ public class SecondActivity extends AppCompatActivity {
 
         String text = getIntent().getStringExtra("key_2");
         if (text != null) {
-            ((TextView)findViewById(R.id.textView_SecondActivity)).setText(text);
+            ((TextView) findViewById(R.id.textView_SecondActivity)).setText(text);
         }
+    }
 
-
+    public void returnToMainActivity(View view) {
+        finish();
     }
 }
