@@ -1,6 +1,8 @@
 package com.example.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,5 +54,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
+    }
+
+    public void startFirstActivity(View view) {
+        // Создаем объект Intent для вызова новой активности
+        Intent intent = new Intent(this, FirstActivity.class); // Intent - это объект, который предоставляет доступ к другим компонентам приложения. И переводится как намерение.
+        // Добавляем параметры в Intent
+        intent.putExtra("key_1", "FirstActivity");
+        // запуск activity
+        startActivity(intent);
+    }
+
+    public void startSecondActivity(View view) {
+        // Создаем объект Intent для вызова новой активности
+        Intent intent = new Intent(this, SecondActivity.class); // Intent - это объект, который предоставляет доступ к другим компонентам приложения. И переводится как намерение.
+        // Добавляем параметры в Intent
+        intent.putExtra("key_2", "SecondActivity");
+        // запуск activity
+        startActivity(intent);
     }
 }
